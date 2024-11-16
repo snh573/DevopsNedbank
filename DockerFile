@@ -1,0 +1,8 @@
+#nginx as base image
+FROM nginx:alpine
+
+#copy file to nginx default dire
+COPY index.html /usr/share/nginx/html/
+
+#port
+EXPOSE 80
